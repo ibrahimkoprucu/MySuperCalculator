@@ -44,8 +44,7 @@
             return ebob;
         }
 
-        // Euclidean algorithm
-        // https://www.wikizero.pro/index.php?q=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvRXVjbGlkZWFuX2FsZ29yaXRobQ
+        // Euclid's algorithm
         public ulong GCD(ulong a, ulong b)
         {
             while (a != 0 && b != 0)

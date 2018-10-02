@@ -9,7 +9,6 @@ namespace MySuperCalculator
             ulong s1 = 1071;
             ulong s2 = 462;
 
-            // #45232332
             Calculator ibosCalculator = new Calculator();
 
             // result = f(10, 15)
