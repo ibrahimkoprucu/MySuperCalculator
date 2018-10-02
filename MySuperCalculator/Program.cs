@@ -12,9 +12,26 @@ namespace MySuperCalculator
             Calculator ibosCalculator = new Calculator();
 
             // result = f(10, 15)
-            ulong result = ibosCalculator.GCD(s1, s2);
+            // ulong result1 = ibosCalculator.GCD(s1, s2);
 
-            Console.WriteLine(result);
+            //int result = ibosCalculator.MultiplyNumbersByAddition(5, 33);
+            //Console.WriteLine(result);
+
+            //int checkForPrime = 13;
+
+            //bool asalMi = ibosCalculator.IsPrime(checkForPrime);
+            //Console.WriteLine(asalMi == true ? "Evet" : "Hayır");
+
+
+            Console.WriteLine("Asal olup olmadığını kollayacağımız sayıyı giriniz: ");
+            string userInput = Console.ReadLine();
+
+            int userInputAsInteger = Convert.ToInt32(userInput);
+
+            bool asalMi = ibosCalculator.IsPrime(userInputAsInteger);
+            Console.WriteLine(asalMi == true ? "Evet" : "Hayır");
+
+
             Console.ReadLine();
         }
     }

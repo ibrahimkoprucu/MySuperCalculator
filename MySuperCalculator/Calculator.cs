@@ -57,5 +57,35 @@
 
             return a == 0 ? b : a;
         }
+
+        public int MultiplyNumbersByAddition(int x, int y)
+        {
+            int sum = 0;
+
+            // todo: find a way more performant.
+            for (int i = 1; i <= y; i++)
+            {
+                sum = sum + x;
+            }
+
+            return sum;
+        }
+
+        public bool IsPrime(int x)
+        {
+            bool result = true;
+
+            // todo: find a better way to do this.
+            for (int i = 2; i < x; i++)
+            {
+                if (x % i == 0)
+                {
+                    result = false;
+                    break;
+                }
+            }
+
+            return result;
+        }
     }
 }
