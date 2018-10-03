@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace MySuperCalculator
 {
@@ -23,14 +24,15 @@ namespace MySuperCalculator
             //Console.WriteLine(asalMi == true ? "Evet" : "Hayır");
 
 
-            Console.WriteLine("Asal olup olmadığını kollayacağımız sayıyı giriniz: ");
+            string messagge = "Asal olup olmadığını kollayacağımız sayıyı giriniz: ";
+
+            Console.WriteLine(messagge);
             string userInput = Console.ReadLine();
 
             int userInputAsInteger = Convert.ToInt32(userInput);
 
             bool asalMi = ibosCalculator.IsPrime(userInputAsInteger);
             Console.WriteLine(asalMi == true ? "Evet" : "Hayır");
-
 
             Console.ReadLine();
         }

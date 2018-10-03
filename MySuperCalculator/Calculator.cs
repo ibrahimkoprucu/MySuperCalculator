@@ -26,7 +26,6 @@
             // kaç kere döneceğini söyleyebilir misin ?
             // evet ise for , hayır ise while
 
-
             for (int i = number2; i > 1; i--)
             {
                 int kalan1 = number1 % i;
