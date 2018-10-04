@@ -1,0 +1,49 @@
+﻿            /*
+                for (int i = 1; i <= x; i++)
+                {
+                    if (i % 2 == 0)
+                    {
+                        continue;
+                    };
+
+                    sonuc = sonuc + i;
+                }
+            */
+
+            /*
+                for (int i = 1; i <= x; i++)
+                {
+                    if (i % 2 == 0) continue;
+
+                    sonuc = sonuc + i;
+                }
+            */
+
+            /*
+                for (int i = 1; i <= x; i++)
+                {
+                    if (i % 2 == 0)
+                    {
+                        // do nothing.
+                    }
+                    else
+                    {
+                        sonuc = sonuc + i;
+                    }
+                }
+            */
+
+
+            /*
+                for (int i = 1; i <= x; i++)
+                {
+                    if (i % 2 == 1)
+                    {
+                        sonuc = sonuc + i;
+                    }
+                    else
+                    {
+                        // do nothing.
+                    }
+                }       
+             */

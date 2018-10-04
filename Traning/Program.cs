@@ -6,34 +6,23 @@ namespace Traning
     {
         private static void Main(string[] args)
         {
-            int number1, number2, sum = 0;
+            // girilen sayiya kadar olan tamsayılardan tek olanlarının toplamını bulunuz.
+            int x, sonuc = 0;
+            string userInput;
 
-            number1 = ReadFromConsoleAsInteger("birinci sayıyı giriniz");
-            number2 = ReadFromConsoleAsInteger("ikinci sayıyı giriniz");
+            Console.WriteLine("lütfen bir pozitif tamsayı giriniz ");
 
-            FancyCalculator myFancyCalculator = new FancyCalculator();
-            int result1 = myFancyCalculator.SumToGivenNumber(number1);
-            int result2 = myFancyCalculator.SumToGivenNumber(number2);
+            // y = f(6)
+            userInput = Console.ReadLine();
+            x = Convert.ToInt32(userInput);
 
-            sum = result2 - result1;
+            FancyCalculator fancyCalculator;
+            fancyCalculator = new FancyCalculator(); 
 
-            int mutlakDeger = Math.Abs(sum);
-            Console.WriteLine(mutlakDeger);
+            sonuc = fancyCalculator.SumOfOddNumbers(x);
 
-            Console.ReadKey();
-        }
-
-        /// <summary>
-        /// Bu method console bir mesaj yazar ve daha sonra kullanıcının girdiği yazıyı tamsayıya çevirip döner.
-        /// </summary>
-        /// <returns>girilen yazının sayıya çevrilmişini (int)</returns>
-        public static int ReadFromConsoleAsInteger(string message)
-        {
-            Console.WriteLine(message);
-            string userInput = Console.ReadLine();
-
-            int userInputAsInt = Convert.ToInt32(userInput);
-            return userInputAsInt;
+            Console.WriteLine("------");
+            Console.WriteLine(sonuc);
         }
     }
 }
