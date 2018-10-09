@@ -35,5 +35,25 @@
 
             return sonuc;
         }
+
+        public int SumOfEvenNumbers(int x)
+        {
+            int total = 0;
+
+            for (int i = 0; i <= x; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    total = total + i;
+                }
+            }
+
+            return total;
+        }
+
+        public int TwoTimesFour()
+        {
+            return 2 * 4;
+        }
     }
 }

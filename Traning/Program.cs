@@ -4,25 +4,31 @@ namespace Traning
 {
     internal class Program
     {
+        // girilen sayiya kadar olan tamsayılardan tek olanlarının toplamını bulunuz.
         private static void Main(string[] args)
         {
-            // girilen sayiya kadar olan tamsayılardan tek olanlarının toplamını bulunuz.
-            int x, sonuc = 0;
-            string userInput;
-
             Console.WriteLine("lütfen bir pozitif tamsayı giriniz ");
 
             // y = f(6)
-            userInput = Console.ReadLine();
-            x = Convert.ToInt32(userInput);
+            string userInput = Console.ReadLine();
+            int x = Convert.ToInt32(userInput);
 
             FancyCalculator fancyCalculator;
-            fancyCalculator = new FancyCalculator(); 
+            fancyCalculator = new FancyCalculator();
 
-            sonuc = fancyCalculator.SumOfOddNumbers(x);
+            int sumOfOdds = fancyCalculator.SumOfOddNumbers(x);
+            int sumOfEvens = fancyCalculator.SumOfEvenNumbers(x);
+
+            int result = fancyCalculator.TwoTimesFour();
 
             Console.WriteLine("------");
-            Console.WriteLine(sonuc);
+            Console.WriteLine(result);
+
+            Console.WriteLine("------");
+            Console.WriteLine(sumOfOdds);
+            Console.WriteLine(sumOfEvens);
+
+            Console.ReadLine();
         }
     }
 }
